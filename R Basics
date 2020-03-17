@@ -1,0 +1,27 @@
+Dealing with date types:
+newDate1 <- "2016-02-14"
+cat("# class of newDate1\n")
+class(newDate1)
+cat("# Convert String to Date using as.Date() \n")
+newDate2 <- as.Date(newDate1)
+newDate2 
+cat("# class of newDate2\n")
+class(newDate2)
+#To print today's date
+today <- Sys.Date()
+cat("# today's date\n")
+today
+cat("# today's date formatted\n")
+format(today,format="%B %d %Y")
+cat("#Converting date in format 'mm/dd/yyyy' to 'yyyy-mm-dd'\n")
+strDates <- c("08/15/1947","01/26/1950")
+dates <- as.Date(strDates,"%m/%d/%Y")
+dates
+cat("#Finding difference between two dates\n")
+dates[2]-dates[1]
+cat("#today's date\n")
+Sys.Date()
+cat("#today's time\n")
+Sys.time()
+cat("#present timezone\n")
+Sys.timezone()
